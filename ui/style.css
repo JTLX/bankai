@@ -55,6 +55,7 @@ body {
     width: 200px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    border-right: 1px solid #dcdcdc;
 }
 .outlet-card .title {
     position: absolute;
@@ -78,9 +79,22 @@ body {
     left: 265px;
     color: #aaa;
 }
-
-
 .outlet-card .subtitle {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
+}
+.image.bagel { 
+    background-image: url("../images/food/bagel.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image.taco { 
+    background-image: url("../images/food/taco.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image.pizza { 
+    background-image: url("../images/food/pizza.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
