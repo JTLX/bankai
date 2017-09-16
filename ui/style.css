@@ -47,7 +47,7 @@ body {
 .container.outlet {
     width: 900px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 20px;
     border-radius: 10px;
 }
@@ -175,5 +175,21 @@ body {
 
 
 .cart-icon {
+    background-image: url(../images/icon_join_cart.png);
+    background-size: cover;
+    height: 28px;
+    width: 30px;
+    top: 94px;
+    left: 595px;
+    position: absolute;
+}
+.cart-text {
+    color: white;
+    font-size: 9px;
+    height: 28px;
+    width: 30px;
+    top: 121px;
+    left: 599px;
+    position: absolute;
 
 }
