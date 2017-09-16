@@ -9,25 +9,31 @@ class User:
     def __init__(self, name, id):
         self.name = name
         self.id = id
-        self.cart = Cart(self, CART_STATUS_READY, [], 0) 
+        self.cart = Cart(id, CART_STATUS_READY, [], 0) 
 
     def add_item(item):
         self.cart.add_item(item)
 
     def remove_item(item):
         self.cart.remove_item(item)
+
 class Cart:
-    def __init__(self, user, status, items, subtotal):
-        self.user = user
+    def __init__(self, id, status, items, subtotal):
         self.status = status
+        self.id = id
         self.items = items
         self.subtotal = subtotal
 
     def add_item(item):
         items.append(item)
+        subtotal += item.price
 
     def remove_item(item):
         items.remove(item)
+        subtotal -= item.price
+
+    def update_cart(status):
+        self.status = status 
 
 class Item:
     def __init__(self, name, price, id):
@@ -48,7 +54,7 @@ roast_beef_cheese = Item("Roast Beef & Cheese Croissant", 4.50, 4)
 items = [ham_cheese, ham_turkey_cheese, turkey_cheese, roast_beef_cheese]
 users = [clarence, joseph, bryan, tanwei]
 
-@app.route('/api/items', methods=["POST"])
+@app.route('/api/update_items', methods=["POST"])
 def add_item():
     data = request.data
     userId = "userId"
@@ -58,7 +64,7 @@ def add_item():
     # if any params not found
     if not is_valid_params(data, (userId, qty, itemId)): 
         return respond(status.HTTP_404_NOT_FOUND)
-    
+
     user = find_user_by_id(int(data[userId]))
     item = find_item_by_id(int(data[itemId]))
 
@@ -69,6 +75,28 @@ def add_item():
     elif qty_int < 0:
         for _ in range(-qty_int):
             user.remove_item(item)
+
+    return respond(status.HTTP_200_OK)
+
+@app.route('/api/carts/', methods=["GET"])
+def carts():
+    return json.dumps([user.cart for user in users], default=lambda o: o.__dict__), status.HTTP_200_OK
+
+@app.route('/api/update_status', methods=["POST"])
+def update_status():
+    data = request.data
+    userId = "userId"
+    status = "status"
+
+    if not is_valid_params(data, (userId, status)):
+        return respond(status.HTTP_404_NOT_FOUND)
+
+    user = find_user_by_id(int(data[userId]))
+
+    if int(status) not in range(2):
+        return respond(status.HTTP_404_NOT_FOUND)
+
+    user.cart.update_status(int(status))
 
     return respond(status.HTTP_200_OK)
 
