@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_api import status
 import json
 
 app = Flask(__name__)
@@ -86,17 +87,17 @@ def carts():
 def update_status():
     data = request.data
     userId = "userId"
-    status = "status"
+    cart_status = "status"
 
-    if not is_valid_params(data, (userId, status)):
+    if not is_valid_params(data, (userId, cart_status)):
         return respond(status.HTTP_404_NOT_FOUND)
 
     user = find_user_by_id(int(data[userId]))
 
-    if int(status) not in range(2):
+    if int(data[cart_status]) not in range(2):
         return respond(status.HTTP_404_NOT_FOUND)
 
-    user.cart.update_status(int(status))
+    user.cart.update_status(int(data[cart_status]))
 
     return respond(status.HTTP_200_OK)
 
@@ -113,4 +114,4 @@ def respond(code):
     return dict(), code
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
