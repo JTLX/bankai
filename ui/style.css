@@ -15,6 +15,22 @@ body {
     padding: 20px 30px;
     float: left;
 }
+
+.hero-title {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 43px;
+    padding-bottom: 9px;
+    font-weight: 700;
+}
+.hero-subtitle {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    padding-bottom: 50px;
+}
 .user {
     padding: 21px 30px;
     float: right;
@@ -23,21 +39,30 @@ body {
 }
 
 .container.main {
-    padding-top: 100px;
+    padding-top: 50px;
+    background-image: url("../images/background.png");
+    background-size: cover;
 }
 
+.container.outlet {
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
 .search-bar {
     padding: 18px 25px;
-    width: 750px;
+    width: 888px;
     margin: 0 auto;
     background-color: #f3f3f3;
     border-radius: 5px;
     font-family: 'Droid Serif', serif;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 .outlet-card {
     width: 800px;
-    height: 200px;
+    height: 160px;
     background-color: #f7f7f7;
     border: 1px solid #dcdcdc;
     margin: 0 auto;
@@ -52,7 +77,7 @@ body {
     left: 0;
     background-color: #f1f1f1;
     height: 100%;
-    width: 200px;
+    width: 180px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     border-right: 1px solid #dcdcdc;
@@ -60,28 +85,44 @@ body {
 .outlet-card .title {
     position: absolute;
     padding: 0;
-    top: 20px;
-    left: 230px;
+    top: 13px;
+    left: 203px;
     font-size: 24px;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 .outlet-card .price {
     position: absolute;
-    padding: 0;
-    top: 55px;
-    left: 230px;
-    color: #aaa;
+        padding: 0;
+            top: 48px;
+                left: 283px;
+                    color: #aaa;
 }
 .outlet-card .time {
-    position: absolute;
-    padding: 0;
-    top: 55px;
-    left: 265px;
-    color: #aaa;
+        position: absolute;
+            padding: 0;
+                top: 48px;
+                    left: 315px;
+                        color: #aaa;
 }
 .outlet-card .subtitle {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
+}
+.outlet-card .stars {
+        position: absolute;
+            top: 50px;
+                left: 204px;
+                    height: 14px;
+                        width: 61px;
+                            background-size: cover;
+
+}
+.outlet-card .stars.four {
+    background-image: url("../images/four-stars.png");
+}
+.outlet-card .stars.five {
+    background-image: url("../images/five-stars.png");
 }
 .image.bagel { 
     background-image: url("../images/food/bagel.jpeg"); 
