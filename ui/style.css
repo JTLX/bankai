@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    font-family: 'Droid Serif', serif;
+    height: 65px;
+    width: 100%;
+    margin: 0px;
+    font-size: 22px;
+    color: #444;
+    border-bottom: 1px solid #ddd;
+}
+.title {
+    padding: 20px 30px;
+    float: left;
+}
+.user {
+    padding: 21px 30px;
+    float: right;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container.main {
+    padding-top: 100px;
+}
+
+.search-bar {
+    padding: 18px 25px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    font-family: 'Droid Serif', serif;
+    margin-bottom: 100px;
+}
+.outlet-card {
+    width: 800px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+.outlet-card .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    height: 100%;
+    width: 200px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.outlet-card .title {
+    position: absolute;
+    padding: 0;
+    top: 20px;
+    left: 230px;
+    font-size: 24px;
+    font-family: 'Droid Serif', serif;
+}
+.outlet-card .price {
+    position: absolute;
+    padding: 0;
+    top: 55px;
+    left: 230px;
+    color: #aaa;
+}
+.outlet-card .time {
+    position: absolute;
+    padding: 0;
+    top: 55px;
+    left: 265px;
+    color: #aaa;
+}
+
+
+.outlet-card .subtitle {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
