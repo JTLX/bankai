@@ -93,29 +93,29 @@ body {
 }
 .outlet-card .price {
     position: absolute;
-        padding: 0;
-            top: 48px;
-                left: 283px;
-                    color: #aaa;
+    padding: 0;
+    top: 48px;
+    left: 283px;
+    color: #aaa;
 }
 .outlet-card .time {
-        position: absolute;
-            padding: 0;
-                top: 48px;
-                    left: 315px;
-                        color: #aaa;
+    position: absolute;
+    padding: 0;
+    top: 48px;
+    left: 315px;
+    color: #aaa;
 }
 .outlet-card .subtitle {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
 }
 .outlet-card .stars {
-        position: absolute;
-            top: 50px;
-                left: 204px;
-                    height: 14px;
-                        width: 61px;
-                            background-size: cover;
+    position: absolute;
+    top: 50px;
+    left: 204px;
+    height: 14px;
+    width: 61px;
+    background-size: cover;
 
 }
 .outlet-card .stars.four {
@@ -138,4 +138,42 @@ body {
     background-image: url("../images/food/pizza.jpeg"); 
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.discount-bar {
+    background-image: url(../images/img_discount_status.png);
+    position: absolute;
+    top: 90px;
+    left: 204px;
+    width: 441px;
+    height: 51px;
+    background-size: cover;
+}
+.discount-text {
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    font-weight: 700;
+    border-right: 1px solid #cacaca;
+    width: 90px;
+
+}
+.discount-text:nth-child(1) { left: 5px; }
+.discount-text:nth-child(2) { left: 95px; }
+.discount-text:nth-child(3) { left: 185px; }
+.discount-text:nth-child(4) { left: 275px; }
+
+.discount-progress {
+    height: 7px;
+    border-radius: 7px;
+    width: 250px;
+    top: 124px;
+    left: 213px;
+    position: absolute;
+    background-color: #1CAE9A;
+}
+
+
+.cart-icon {
+
 }
