@@ -35,13 +35,16 @@ body {
     padding-right: 26px;
     transform: translateY(-50%);
     width: fit-content;
-    font-size: large;
+    font-size: 15px;
     text-decoration: underline;
 }
 
 .host-cart .fa.fa-cart-plus {
-    padding-right: 5px;
+    position: absolute;
+    top: 50%;
+    left: -27px;
     font-size: 22px;
+    transform: translateY(-50%);
 }
 
 .outlet-top-bar {
