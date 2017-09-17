@@ -338,3 +338,8 @@ span.host {
     position: relative;
     top: 20px;
 }
+.logo {
+    width: 135px;
+    height: 40px;
+    margin: 11px 11px;
+}
