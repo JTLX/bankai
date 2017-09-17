@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
+
 .header {
     font-family: 'Droid Serif', serif;
     height: 65px;
@@ -11,6 +12,7 @@ body {
     color: #444;
     border-bottom: 1px solid #ddd;
 }
+
 .title {
     padding: 20px 30px;
     float: left;
@@ -24,6 +26,7 @@ body {
     padding-bottom: 9px;
     font-weight: 700;
 }
+
 .hero-subtitle {
     color: white;
     width: 100%;
@@ -31,6 +34,7 @@ body {
     font-size: 19px;
     padding-bottom: 50px;
 }
+
 .user {
     padding: 21px 30px;
     float: right;
@@ -128,17 +132,19 @@ body {
     left: 283px;
     color: #aaa;
 }
-.outlet-card .eta {
+.outlet-card .location {
     position: absolute;
     padding: 0;
     top: 67px;
     left: 204px;
     color: #aaa;
 }
+
 .outlet-card .subtitle {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
 }
+
 .outlet-card .stars {
     position: absolute;
     top: 50px;
@@ -152,13 +158,13 @@ body {
 .outlet-card .deadline {
     position: absolute;
     top: 20px;
-    left: 683px;
+    right: 17px;
     height: 30px;
-    width: 120px;
+    width: 140px;
     font-size: 20px;
     font-weight: 700;
+    text-align: right;
 }
-
 .outlet-card .fa.fa-clock-o {
     padding-right: 8px; 
     color: #baa 
@@ -168,6 +174,10 @@ body {
 }
 .outlet-card .stars.five {
     background-image: url("../images/five-stars.png");
+}
+.outlet-card .fa.fa-map-marker {
+    padding-right: 8px;
+    color: #baa
 }
 .image.bagel { 
     background-image: url("../images/food/bagel.jpeg"); 
