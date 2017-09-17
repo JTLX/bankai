@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    font-family: 'Droid Serif', serif;
+    height: 65px;
+    width: 100%;
+    margin: 0px;
+    font-size: 22px;
+    color: #ffe4e4;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8575a;
+}
+.title {
+    padding: 20px 30px;
+    float: left;
+}
+
+.user {
+    padding: 21px 30px;
+    float: right;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container.main {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    min-height: 1000px;
+    display: flex;
+}
+
+.container.left {
+    flex-grow: 65;
+    min-height: 1000px;
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.container.right {
+    flex-grow: 35;
+    min-height: 1000px;
+}
