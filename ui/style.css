@@ -269,7 +269,7 @@ body {
     top: 124px;
     left: 213px;
     position: absolute;
-    background-color: #1CAE9A;
+    background-color: green;
 }
 
 .discount-progress-2 {
@@ -279,7 +279,7 @@ body {
     top: 124px;
     left: 213px;
     position: absolute;
-    background-color: #1CAE9A;
+    background-color: green;
 }
 .discount-progress-3 {
     height: 7px;
@@ -288,7 +288,7 @@ body {
     top: 124px;
     left: 213px;
     position: absolute;
-    background-color: #1CAE9A;
+    background-color: green;
 }
 .cart-icon {
     background-image: url(../images/icon_join_cart.png);
