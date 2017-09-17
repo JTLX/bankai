@@ -125,3 +125,11 @@ function parse_query_string(query) {
 if (!String.prototype.format) { String.prototype.format = function() { var args = arguments; return this.replace(/{(\d+)}/g, function(match, number) { return typeof args[number] != 'undefined' ? args[number] : match ; }); }; }
 
 
+
+function checkout() {
+    var html = ' <div class="checkout-container"> <div class="checkout-invoice"> <h1><a id="Thank_you_your_order_has_been_placed_0"></a>Thank you, your order has been placed.</h1> <h5><a id="Sunday_17_September_2017_803_AM_1"></a>Sunday, 17 September 2017, 8:03 AM<br>Order #: 09D1A836CA3B27C1</h5> <p><strong>$34.57</strong> will be charged to Visa card ending in 3302 when the cart\'s delivery request is sent.<br> Note that this price may further decrease as more users join the cart <i class="fa fa-smile-o" aria-hidden="true"></i>.<br> <br> Please present the following QR code upon food collection: <br> <center><img src="../images/qr-code.png" width=150px height=150px></img></center> <br> You can also find this QR code within your email, your_email@gmail.com <br> <div class="group-chat-button">Join the Group Chat</div> </div> </div>';
+    setTimeout(function() {
+        $(".checkout").remove();
+        $(".menu-container").html(html);
+    }, 1000);
+}
