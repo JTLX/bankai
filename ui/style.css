@@ -59,6 +59,7 @@ body {
     border-radius: 5px;
     font-family: 'Droid Serif', serif;
     margin-bottom: 40px;
+    color: #888
 }
 .outlet-card {
     width: 800px;
@@ -70,6 +71,34 @@ body {
     margin-bottom: 40px;
     border-radius: 10px;
     position: relative;
+}
+
+.outlet-card .party-info {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    left: 683px;
+}
+.outlet-card .party-info .party-current {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.outlet-card .party-info .party-max {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.outlet-card .party-info .fa.fa-users {
+    position: absolute;
+    font-size: 35px;
+    color: #333;
+    top: 45px;
 }
 .outlet-card .image {
     position: absolute;
@@ -98,11 +127,11 @@ body {
     left: 283px;
     color: #aaa;
 }
-.outlet-card .time {
+.outlet-card .eta {
     position: absolute;
     padding: 0;
-    top: 48px;
-    left: 315px;
+    top: 67px;
+    left: 204px;
     color: #aaa;
 }
 .outlet-card .subtitle {
@@ -117,6 +146,21 @@ body {
     width: 61px;
     background-size: cover;
 
+}
+
+.outlet-card .deadline {
+    position: absolute;
+    top: 20px;
+    left: 683px;
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.outlet-card .fa.fa-clock-o {
+    padding-right: 8px; 
+    color: #baa 
 }
 .outlet-card .stars.four {
     background-image: url("../images/four-stars.png");

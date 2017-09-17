@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>OneCart</title>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="all">
-</head>
-<body>
-    <div class="header">
-        <div class="title">OneCart</div>
-        <div class="user">Joseph Tang</div>
-    </div>
-    <div class="container main">
-        <div class="hero-title">OneKart</div>
-        <div class="hero-subtitle">Fast and rewarding group orders.</div>
-        <div class="search-bar">Search for restaurants...</div>
-        <!-- (div.outlet-card > (.image + .title + .price + .time + .body))*3 -->
-        <div class="container outlet">
-            <div class="outlet-card">
-                <div class="image bagel"></div>
-                <div class="title">Pete's Bagels</div>
-                <div class="stars five"></div>
-                <div class="price subtitle">$$</div>
-                <div class="time subtitle">50 mins</div>
-                <div class="discount-bar">
-                    <div class="discount-text">5%</div>
-                    <div class="discount-text">10%</div>
-                    <div class="discount-text">15%</div>
-                    <div class="discount-text">20%</div>
+    <head>
+        <meta charset="UTF-8">
+        <title>OneCart</title>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="title">OneCart</div>
+            <div class="user">Joseph Tang</div>
+        </div>
+        <div class="container main">
+            <div class="hero-title">OneKart</div>
+            <div class="hero-subtitle">Fast and rewarding group orders.</div>
+            <div class="search-bar">Search for restaurants...</div>
+            <!-- (div.outlet-card > (.image + .title + .price + .time + .body))*3 -->
+            <div class="container outlet">
+                <div class="outlet-card">
+                    <div class="image bagel"></div>
+                    <div class="title">Pete's Bagels</div>
+                    <div class="stars five"></div>
+                    <div class="price subtitle">$$</div>
+                    <div class="eta subtitle">Estimated Time Arrival: 34 min</div>
+                    <div class="discount-bar">
+                        <div class="discount-text">5%</div>
+                        <div class="discount-text">10%</div>
+                        <div class="discount-text">15%</div>
+                        <div class="discount-text">20%</div>
+                    </div>
+                    <div class="discount-progress"></div>
+                    <div class="cart-icon"></div>
+                    <div class="party-info">
+                        <div class="party-current">18</div>
+                        <div class="party-max">/25</div>
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="cart-text">JOIN</div>
+                    <div class="deadline"><i class="fa fa-clock-o" aria-hidden="true"></i>21 min</div>
+                    <div class="body"></div>
                 </div>
-                <div class="discount-progress"></div>
-                <div class="cart-icon"></div>
-                <div class="cart-text">JOIN</div>
-                <div class="body"></div>
-            </div>
-            <div class="outlet-card">
-                <div class="image taco"></div>
-                <div class="title">Chipotle</div>
-                <div class="stars four"></div>
-                <div class="price subtitle">$</div>
-                <div class="time subtitle">25 mins</div>
-                <div class="discount-bar"> </div>
-                <div class="body"></div>
-                <div class="discount-bar">
-                    <div class="discount-text">5%</div>
-                    <div class="discount-text">10%</div>
-                    <div class="discount-text">15%</div>
-                    <div class="discount-text">20%</div>
+                <div class="outlet-card">
+                    <div class="image taco"></div>
+                    <div class="title">Chipotle</div>
+                    <div class="stars four"></div>
+                    <div class="price subtitle">$</div>
+                    <div class="eta subtitle">Estimated Time Arrival: 29 min</div>
+                    <div class="discount-bar"> </div>
+                    <div class="body"></div>
+                    <div class="discount-bar">
+                        <div class="discount-text">5%</div>
+                        <div class="discount-text">10%</div>
+                        <div class="discount-text">15%</div>
+                        <div class="discount-text">20%</div>
+                    </div>
+                    <div class="discount-progress"></div>
+                    <div class="cart-icon"></div>
+                    <div class="cart-text">JOIN</div>
+                    <div class="deadline"><i class="fa fa-clock-o" aria-hidden="true"></i>8 min</div>
                 </div>
-                <div class="discount-progress"></div>
-                <div class="cart-icon"></div>
-                <div class="cart-text">JOIN</div>
-            </div>
-            <div class="outlet-card">
-                <div class="image pizza"></div>
-                <div class="title">Pizza My Heart</div>
-                <div class="stars five"></div>
-                <div class="price subtitle">$</div>
-                <div class="time subtitle">20 mins</div>
-                <div class="discount-bar"> </div>
-                <div class="body"></div>
-                <div class="discount-bar">
-                    <div class="discount-text">5%</div>
-                    <div class="discount-text">10%</div>
-                    <div class="discount-text">15%</div>
-                    <div class="discount-text">20%</div>
+                <div class="outlet-card">
+                    <div class="image pizza"></div>
+                    <div class="title">Pizza My Heart</div>
+                    <div class="stars five"></div>
+                    <div class="price subtitle">$</div>
+                    <div class="eta subtitle">Estimated Time Arrival: 39 min</div>
+                    <div class="discount-bar"> </div>
+                    <div class="body"></div>
+                    <div class="discount-bar">
+                        <div class="discount-text">5%</div>
+                        <div class="discount-text">10%</div>
+                        <div class="discount-text">15%</div>
+                        <div class="discount-text">20%</div>
+                    </div>
+                    <div class="discount-progress"></div>
+                    <div class="cart-icon"></div>
+                    <div class="cart-text">JOIN</div>
+                    <div class="deadline"><i class="fa fa-clock-o" aria-hidden="true"></i>7 min</div>
                 </div>
-                <div class="discount-progress"></div>
-                <div class="cart-icon"></div>
-                <div class="cart-text">JOIN</div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
