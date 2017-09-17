@@ -208,7 +208,7 @@ body {
 .discount-text:nth-child(3) { left: 185px; }
 .discount-text:nth-child(4) { left: 275px; }
 
-.discount-progress {
+.discount-progress-1 {
     height: 7px;
     border-radius: 7px;
     width: 250px;
@@ -218,6 +218,24 @@ body {
     background-color: #1CAE9A;
 }
 
+.discount-progress-2 {
+    height: 7px;
+    border-radius: 7px;
+    width: 125px;
+    top: 124px;
+    left: 213px;
+    position: absolute;
+    background-color: #1CAE9A;
+}
+.discount-progress-3 {
+    height: 7px;
+    border-radius: 7px;
+    width: 300px;
+    top: 124px;
+    left: 213px;
+    position: absolute;
+    background-color: #1CAE9A;
+}
 .cart-icon {
     background-image: url(../images/icon_join_cart.png);
     background-size: cover;
