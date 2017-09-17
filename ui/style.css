@@ -109,10 +109,17 @@ body {
     color: #888;
 }
 
-.search-bar .fa.fa-search {
+.search-bar .fa.fa-sliders {
     position: absolute;
     top: 50%;
     right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.search-bar .fa.fa-search {
+    position: absolute;
+    top: 50%;
+    right: 50px;
     transform: translateY(-50%);
     font-size: 20px;
 }
