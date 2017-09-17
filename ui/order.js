@@ -19,6 +19,12 @@ var items = {
 };
 
 var cart = {};
+var members = {
+    1: {
+        name: "Clarence",
+        amount: 25.50
+    }
+}
 
 
 var menuEntry = ' <div class="entry" data-itemId="{3}"> <div class="name">{0}</div> <div class="price">{1}</div> <div class="quantity">{2} </div> </div>';
@@ -66,14 +72,28 @@ var othersTotal = 140;
 function refreshBar(myTotal) {
     var maxBarWidth = 340;
     var maxValue = 200;
-    var width = (othersTotal + myTotal) / maxValue  * maxBarWidth;
+    var myWidth = (othersTotal + myTotal) / maxValue  * maxBarWidth;
+    var othersWidth = (othersTotal) / maxValue  * maxBarWidth;
 
+    $("#total-progress").animate({
+        width: Math.min(othersWidth, maxBarWidth) + "px"
+    }, 500)
     $("#my-progress").animate({
-        width: Math.min(width, maxBarWidth) + "px"
-    }, 200)
+        width: Math.min(myWidth, maxBarWidth) + "px"
+    }, 500)
 }
 function formatMoney(float) {
     return "$" + float.toFixed(2);
+}
+
+function addMember(memberId) {
+    var memberHtml = ' <div class="member" style="background-color: yellow"><div class="image"></div> <div class="name">{0}</div> </div>';
+    othersTotal += members[memberId].amount;
+    var newMember = $("#members").append(memberHtml.format("Clarence"));
+    $(".member").animate({
+        backgroundColor: "white"
+    }, 1200);
+    refreshTotals();
 }
 
 function updateTimer() {
@@ -88,7 +108,11 @@ function updateTimer() {
     $("#timer").html(displayString);
     msLeft -= 1000;
 }
+updateTimer();
 setInterval(updateTimer, 1000);
+setTimeout(function() {
+    addMember(1);
+}, 8000)
 
 function parse_query_string(query) {
   var vars = query.split("&"); var query_string = {}; for (var i = 0; i < vars.length; i++) { var pair = vars[i].split("="); if (typeof query_string[pair[0]] === "undefined") { query_string[pair[0]] = decodeURIComponent(pair[1]); } else if (typeof query_string[pair[0]] === "string") { var arr = [query_string[pair[0]], decodeURIComponent(pair[1])]; query_string[pair[0]] = arr; } else { query_string[pair[0]].push(decodeURIComponent(pair[1])); } } return query_string;

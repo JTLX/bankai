@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>OneCart</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="order-style.css" media="all">
@@ -74,7 +76,7 @@
                     <div class="discount-text">8%<br><span class="dollars">$120</span></div>
                     <div class="discount-text">10%<br><span class="dollars">$150</span></div>
                 </div>
-            <div class="discount-progress-1"></div>
+            <div class="discount-progress-1" id="total-progress"></div>
             <div class="discount-progress-2" id="my-progress"></div>
             </div>
             <div class="cart" id="cart"></div>
@@ -86,22 +88,22 @@
                     <tr class="discount"><td>8% Discount:</td><td id="discount"> -$0.00 </td></tr>
                     <tr class="total"><td>Total:</td><td id="total"> $0.00 </td></tr>
                 </table>
-                <a class="checkout" href="checkout.html"></a>
+                <a class="checkout" href="checkout.html">Checkout</a>
             </div>
             <div class="members-containers">
                 <div class="members-title">Members</div>
-                <div class="members">
+                <div class="members" id="members">
                     <div class="member">
                         <div class="image"></div>
-                        <div class="name">Clarence</div>
+                        <div class="name">Me</div>
                     </div>
                     <div class="member">
                         <div class="image"></div>
-                        <div class="name">Clarence</div>
+                        <div class="name">Bryan <span class="host">(Host)</span></div>
                     </div>
                     <div class="member">
                         <div class="image"></div>
-                        <div class="name">Clarence</div>
+                        <div class="name">Tan Wei</div>
                     </div>
                 </div>
             </div>
