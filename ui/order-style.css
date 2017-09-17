@@ -9,12 +9,15 @@ body {
     margin: 0px;
     font-size: 22px;
     color: #ffe4e4;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eaa9aa;
     background-color: #f8575a;
 }
 .title {
-    padding: 20px 30px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 30px;
     float: left;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 .user {
@@ -39,4 +42,16 @@ body {
 .container.right {
     flex-grow: 35;
     min-height: 1000px;
+}
+
+.hero-image {
+    background-image: url("../images/food/pizza-wide.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+97&0.41+0,0+51,0.29+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.41) 0%, rgba(0,0,0,0) 51%, rgba(0,0,0,0.27) 97%, rgba(0,0,0,0.29) 100%), url("../images/food/pizza-wide.jpg") no-repeat; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.41) 0%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.27) 97%,rgba(0,0,0,0.29) 100%), url("../images/food/pizza-wide.jpg") no-repeat; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.41) 0%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.27) 97%,rgba(0,0,0,0.29) 100%), url("../images/food/pizza-wide.jpg") no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69000000', endColorstr='#4a000000',GradientType=0  ); /* IE6-9 */
 }
