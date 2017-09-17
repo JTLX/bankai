@@ -44,22 +44,23 @@ body {
     background-size: cover;
 }
 
+
 .container.outlet {
-    width: 900px;
+    width: 850px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
 }
 .search-bar {
     padding: 18px 25px;
-    width: 888px;
+    width: 600px;
     margin: 0 auto;
     background-color: #f3f3f3;
     border-radius: 5px;
     font-family: 'Droid Serif', serif;
     margin-bottom: 40px;
-    color: #888
+    color: #888;
 }
 .outlet-card {
     width: 800px;
@@ -67,8 +68,8 @@ body {
     background-color: #f7f7f7;
     border: 1px solid #dcdcdc;
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     position: relative;
 }
@@ -217,7 +218,6 @@ body {
     background-color: #1CAE9A;
 }
 
-
 .cart-icon {
     background-image: url(../images/icon_join_cart.png);
     background-size: cover;
@@ -235,5 +235,4 @@ body {
     top: 121px;
     left: 599px;
     position: absolute;
-
 }
