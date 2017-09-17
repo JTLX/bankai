@@ -153,6 +153,7 @@ body {
     top: 21px;
     left: 595px;
     position: absolute;
+    cursor: pointer;
     /* height: 30px; */
     /* width: 140px; */
     padding: 7px 20px;
@@ -299,7 +300,7 @@ body {
 
 .members-containers {
     position: absolute;
-    top: 500px;
+    top: 520px;
     width: 35%;
     padding: 40px;
     border-top: 1px solid gray;
