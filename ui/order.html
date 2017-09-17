@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>OneCart</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="order-style.css" media="all">
+    <script src="order.js"></script>
 </head>
 <body>
     <div class="header">
@@ -34,28 +36,28 @@
                             <div class="name">Big Sur Slice</div>
                             <input class="quantity"></input>
                             <div class="price">$5.60</div>
-                            <div class="add">Add to cart</div>
+                            <div class="add" onclick="addToCart(1)">Add to cart</div>
                         </div>
                         <div class="item">
                             <div class="image"></div>
                             <div class="name">Combo Slice</div>
                             <input class="quantity"></input>
                             <div class="price">$5.80</div>
-                            <div class="add">Add to cart</div>
+                            <div class="add" onclick="addToCart(2)">Add to cart</div>
                         </div>
                         <div class="item">
                             <div class="image"></div>
                             <div class="name">Sausage Slice</div>
                             <input class="quantity"></input>
                             <div class="price">$4.80</div>
-                            <div class="add">Add to cart</div>
+                            <div class="add" onclick="addToCart(3)">Add to cart</div>
                         </div>
                         <div class="item">
                             <div class="image"></div>
                             <div class="name">Little Sur Slice</div>
                             <input class="quantity"></input>
                             <div class="price">$5.20</div>
-                            <div class="add">Add to cart</div>
+                            <div class="add" onclick="addToCart(4)">Add to cart</div>
                         </div>
                     </div>
                 </div>
@@ -73,30 +75,31 @@
                     <div class="discount-text">20%<br><span class="dollars">$200</span></div>
                 </div>
             <div class="discount-progress-1"></div>
+            <div class="discount-progress-2"></div>
             </div>
-            <div class="cart">
-                <div class="entry">
-                    <div class="name">Big Sur Slice</div>
-                    <div class="price">$5.40</div>
-                    <div class="quantity">x1 </div>
-                </div>
-                <div class="entry">
-                    <div class="name">Big Sur Slice</div>
-                    <div class="price">$5.40</div>
-                    <div class="quantity">x1 </div>
-                </div>
-                <div class="entry">
-                    <div class="name">Big Sur Slice</div>
-                    <div class="price">$5.40</div>
-                    <div class="quantity">x1 </div>
-                </div>
+            <div class="cart" id="cart">
+                <!--<div class="entry">-->
+                    <!--<div class="name">Big Sur Slice</div>-->
+                    <!--<div class="price">$5.40</div>-->
+                    <!--<div class="quantity">x1 </div>-->
+                <!--</div>-->
+                <!--<div class="entry">-->
+                    <!--<div class="name">Big Sur Slice</div>-->
+                    <!--<div class="price">$5.40</div>-->
+                    <!--<div class="quantity">x1 </div>-->
+                <!--</div>-->
+                <!--<div class="entry">-->
+                    <!--<div class="name">Big Sur Slice</div>-->
+                    <!--<div class="price">$5.40</div>-->
+                    <!--<div class="quantity">x1 </div>-->
+                <!--</div>-->
             </div>
             <div class="amounts">
                 <table>
-                    <tr class="taxes"><td>Subtotal:</td><td> $34.23 </td></tr>
-                    <tr class="subtotal"><td>Taxes:</td><td> $3.32 </td></tr>
-                    <tr class="discount"><td>8% Discount:</td><td> -$3.32 </td></tr>
-                    <tr class="total"><td>Total:</td><td> $99.99 </td></tr>
+                    <tr class="taxes"><td>Subtotal:</td><td id="subtotal"> $0.00 </td></tr>
+                    <tr class="subtotal"><td>Taxes:</td><td id="taxes"> $0.00 </td></tr>
+                    <tr class="discount"><td>8% Discount:</td><td id="discount"> -$0.00 </td></tr>
+                    <tr class="total"><td>Total:</td><td id="total"> $0.00 </td></tr>
                 </table>
                 <a class="checkout" href="checkout.html"></a>
             </div>
