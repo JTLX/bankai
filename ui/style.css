@@ -307,6 +307,7 @@ body {
     position: absolute;
 }
 .logo {
-    margin-left: 37%;
+    display: block;
+    margin: auto;
     margin-bottom: 15px;
 }
