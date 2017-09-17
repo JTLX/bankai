@@ -287,12 +287,15 @@ body {
 
 .amounts .taxes, .amounts .subtotal {
     color: #888;
+    font-size: 18px;
 }
 .amounts .discount {
     color: #f8575a;
+    font-size: 18px;
 }
 .amounts .total {
     font-weight: 700;
+    font-size: 18px;
 }
 
 .members-containers {
