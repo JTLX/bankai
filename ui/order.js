@@ -53,8 +53,8 @@ function refreshTotals() {
         subtotal += cart[itemId].quantity * items[itemId].price;
     }
     taxes = 0.09 * subtotal;
-    discount = 0.08 * (subtotal + taxes);
-    total = 0.92 * (subtotal + taxes);
+    discount = 0.08 * (subtotal);
+    total = subtotal + taxes - discount;
 
     $("#subtotal").html(formatMoney(subtotal));
     $("#taxes").html(formatMoney(taxes));
