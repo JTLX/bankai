@@ -280,10 +280,10 @@ body {
     font-weight: 700;
 }
 
-.members {
+.members-containers {
     position: absolute;
     top: 500px;
-    width: 100%;
+    width: 35%;
     padding: 40px;
     border-top: 1px solid gray;
 }
@@ -293,7 +293,16 @@ body {
     font-size: 16px;
     padding-bottom: 30px;
 }
-.members table td {
-    width: 130px;
-    text-align: left;
+.member .image {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-image: url("../images/img_bryan.png");
+    display: inline-block;
+}
+.member .name {
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    left: 9px;
 }
