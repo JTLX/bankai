@@ -323,3 +323,8 @@ body {
     top: -13px;
     left: 9px;
 }
+.logo {
+    width: 135px;
+    height: 40px;
+    margin: 11px 11px;
+}
