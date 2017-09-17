@@ -34,28 +34,28 @@
                         <div class="item">
                             <div class="image"></div>
                             <div class="name">Big Sur Slice</div>
-                            <input class="quantity"></input>
+                            <input class="quantity" value="1"></input>
                             <div class="price">$5.60</div>
                             <div class="add" onclick="addToCart(1)">Add to cart</div>
                         </div>
                         <div class="item">
                             <div class="image"></div>
                             <div class="name">Combo Slice</div>
-                            <input class="quantity"></input>
+                            <input class="quantity" value="1"></input>
                             <div class="price">$5.80</div>
                             <div class="add" onclick="addToCart(2)">Add to cart</div>
                         </div>
                         <div class="item">
                             <div class="image"></div>
                             <div class="name">Sausage Slice</div>
-                            <input class="quantity"></input>
+                            <input class="quantity" value="1"></input>
                             <div class="price">$4.80</div>
                             <div class="add" onclick="addToCart(3)">Add to cart</div>
                         </div>
                         <div class="item">
                             <div class="image"></div>
                             <div class="name">Little Sur Slice</div>
-                            <input class="quantity"></input>
+                            <input class="quantity" value="1"></input>
                             <div class="price">$5.20</div>
                             <div class="add" onclick="addToCart(4)">Add to cart</div>
                         </div>
@@ -64,8 +64,8 @@
             </div>
         </div>
         <div class="container right">
-            <div class="timer">
-                00:24:16
+            <div class="timer" id="timer" >
+                - : - : -
             </div>
             <div class="progress-bar">
                 <div class="discount-bar">
@@ -75,25 +75,10 @@
                     <div class="discount-text">20%<br><span class="dollars">$200</span></div>
                 </div>
             <div class="discount-progress-1"></div>
-            <div class="discount-progress-2"></div>
+            <div class="discount-progress-2" id="my-progress"></div>
             </div>
-            <div class="cart" id="cart">
-                <!--<div class="entry">-->
-                    <!--<div class="name">Big Sur Slice</div>-->
-                    <!--<div class="price">$5.40</div>-->
-                    <!--<div class="quantity">x1 </div>-->
-                <!--</div>-->
-                <!--<div class="entry">-->
-                    <!--<div class="name">Big Sur Slice</div>-->
-                    <!--<div class="price">$5.40</div>-->
-                    <!--<div class="quantity">x1 </div>-->
-                <!--</div>-->
-                <!--<div class="entry">-->
-                    <!--<div class="name">Big Sur Slice</div>-->
-                    <!--<div class="price">$5.40</div>-->
-                    <!--<div class="quantity">x1 </div>-->
-                <!--</div>-->
-            </div>
+            <div class="cart" id="cart"></div>
+
             <div class="amounts">
                 <table>
                     <tr class="taxes"><td>Subtotal:</td><td id="subtotal"> $0.00 </td></tr>

@@ -1,3 +1,4 @@
+var msLeft = 942000;
 var items = {
     1: {
         name: "Big Sur Slice",
@@ -57,13 +58,35 @@ function refreshTotals() {
 
     $("#subtotal").html(formatMoney(subtotal));
     $("#taxes").html(formatMoney(taxes));
-    $("#discount").html(formatMoney(discount));
+    $("#discount").html("-" + formatMoney(discount));
     $("#total").html(formatMoney(total));
+    refreshBar(total);
+}
+var othersTotal = 140;
+function refreshBar(myTotal) {
+    var maxBarWidth = 340;
+    var maxValue = 200;
+    var width = (othersTotal + myTotal) / maxValue  * maxBarWidth;
+
+    $("#my-progress").animate({
+        width: Math.min(width, maxBarWidth) + "px"
+    }, 200)
 }
 function formatMoney(float) {
     return "$" + float.toFixed(2);
 }
 
+function updateTimer() {
+    $("#timer").show();
+    var days = Math.floor(msLeft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((msLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((msLeft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((msLeft % (1000 * 60)) / 1000);
+    var displayString = hours  + " : " + minutes + " : " + seconds;
+    $("#timer").html(displayString);
+    msLeft -= 1000;
+}
+setInterval(updateTimer, 1000);
 
 function parse_query_string(query) {
   var vars = query.split("&"); var query_string = {}; for (var i = 0; i < vars.length; i++) { var pair = vars[i].split("="); if (typeof query_string[pair[0]] === "undefined") { query_string[pair[0]] = decodeURIComponent(pair[1]); } else if (typeof query_string[pair[0]] === "string") { var arr = [query_string[pair[0]], decodeURIComponent(pair[1])]; query_string[pair[0]] = arr; } else { query_string[pair[0]].push(decodeURIComponent(pair[1])); } } return query_string;

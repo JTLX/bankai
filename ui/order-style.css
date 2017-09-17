@@ -150,11 +150,15 @@ body {
     width: 70px;
 }
 .item > .add {
-    top: 25px;
-    left: 655px;
+    top: 21px;
+    left: 595px;
     position: absolute;
-    height: 70px;
-    width: 140px;
+    /* height: 30px; */
+    /* width: 140px; */
+    padding: 7px 20px;
+    background-color: #f8575a;
+    border-radius: 6px;
+    color: #fff0f0;
 }
 
 .container.right {
@@ -230,6 +234,16 @@ body {
     left: 10px;
     position: absolute;
     background-color: #1CAE9A;
+    z-index: 1;
+}
+.discount-progress-2 {
+    height: 7px;
+    border-radius: 7px;
+    width: 0;
+    top: 65px;
+    left: 10px;
+    position: absolute;
+    background-color: #94ded4;
 }
 
 .cart {
@@ -249,7 +263,7 @@ body {
 
 }
 .entry > * { position: absolute; }
-.entry > .name { left: 10px; }
+.entry > .name { left: 10px; font-weight: 700; }
 .entry > .price { left: 150px; }
 .entry > .quantity { left: 240px; }
 
