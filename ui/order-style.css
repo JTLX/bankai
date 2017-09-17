@@ -153,6 +153,7 @@ body {
     top: 21px;
     left: 595px;
     position: absolute;
+    cursor: pointer;
     /* height: 30px; */
     /* width: 140px; */
     padding: 7px 20px;
