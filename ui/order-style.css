@@ -11,7 +11,9 @@ body {
     color: #ffe4e4;
     background-color: #f8575a;
 }
-.title {
+.header > .title  > a{
+    color: #ffe4e4;
+    text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     padding: 14px 30px;
     float: left;
@@ -19,7 +21,7 @@ body {
     font-size: 26px;
 }
 
-.user {
+.header > .user {
     padding: 20px 30px;
     float: right;
     font-size: 15px;
@@ -37,7 +39,7 @@ body {
 .container.left {
     flex-grow: 65;
     min-height: 1000px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 1);
 }
 .container.right {
     border-top: 1px solid #eaa9aa;
@@ -70,6 +72,76 @@ body {
 .hero-subtitle {
     color: #555;
 }
-.hero-subtitle .fa {
+.hero-subtitle > .fa {
     padding-right: 7px;
+}
+
+.menu-container {
+    padding: 40px 50px;
+}
+
+.menu-container > .title {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.section > .title {
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.headers { 
+    position: relative; 
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    padding: 9px 0 ;
+    /*width: 600px;*/
+}
+.headers > * { position: absolute; top: 19px;}
+
+.headers > .items { left: 10px; }
+.headers > .quantity { left: 268px; }
+.headers > .price { left: 400px; }
+
+.item {
+    position: relative;
+    height: 80px;
+    /*width: 600px;*/
+    border-bottom: 1px solid #ddd;
+    margin: 25px 0;
+    padding: 9px 0;
+}
+
+.item > .image {
+    top: 5px;
+    left: 8px;
+    border-radius: 5px;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-image: url("../images/food/slice.jpeg");
+    background-size: cover;
+}
+
+.item > .name {
+    top: 25px;
+    left: 105px;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+}
+.item > .quantity {
+    top: 25px;
+    left: 265px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+}
+.item > .price {
+    top: 25px;
+    left: 405px;
+    position: absolute;
+    height: 70px;
+    width: 70px;
 }
