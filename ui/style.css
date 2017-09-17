@@ -54,7 +54,16 @@ body {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 10px;
+    padding-top: 15px;
     border-radius: 10px;
+}
+.filter {
+    width: 788px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    color: grey;
+    font-size: 12px;
 }
 .search-bar {
     position: relative;
@@ -81,7 +90,7 @@ body {
     background-color: #f7f7f7;
     border: 1px solid #dcdcdc;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 11px;
     margin-bottom: 20px;
     border-radius: 10px;
     position: relative;
