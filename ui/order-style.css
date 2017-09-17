@@ -285,7 +285,7 @@ body {
     text-align: right;
 }
 
-.amounts .taxes, .amounts .subtotal {
+.amounts .taxes, .amounts .subtotal , .amounts .delivery{
     color: #888;
     font-size: 18px;
 }

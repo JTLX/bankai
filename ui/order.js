@@ -19,6 +19,7 @@ var items = {
 };
 
 var cart = {};
+var numMembers = 3;
 var members = {
     1: {
         name: "Clarence",
@@ -54,16 +55,19 @@ function refreshTotals() {
     var subtotal = 0, 
         taxes = 0,
         discount = 0,
+        delivery = 0,
         total = 0;
     for (var itemId in cart) {
         subtotal += cart[itemId].quantity * items[itemId].price;
     }
     taxes = 0.09 * subtotal;
     discount = 0.08 * (subtotal);
-    total = subtotal + taxes - discount;
+    delivery = 5 / numMembers;
+    total = subtotal + taxes + delivery - discount;
 
     $("#subtotal").html(formatMoney(subtotal));
     $("#taxes").html(formatMoney(taxes));
+    $("#delivery").html(formatMoney(delivery));
     $("#discount").html("-" + formatMoney(discount));
     $("#total").html(formatMoney(total));
     refreshBar(total);
@@ -90,6 +94,7 @@ function addMember(memberId) {
     var memberHtml = ' <div class="member" style="background-color: yellow"><div class="image"></div> <div class="name">{0}</div> </div>';
     othersTotal += members[memberId].amount;
     var newMember = $("#members").append(memberHtml.format("Clarence"));
+    numMembers += 1;
     $(".member").animate({
         backgroundColor: "white"
     }, 1200);
