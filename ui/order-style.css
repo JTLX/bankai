@@ -279,3 +279,21 @@ body {
 .amounts .total {
     font-weight: 700;
 }
+
+.members {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    padding: 40px;
+    border-top: 1px solid gray;
+}
+
+.members-title {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.members table td {
+    width: 130px;
+    text-align: left;
+}
