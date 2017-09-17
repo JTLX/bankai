@@ -27,6 +27,33 @@ body {
     font-weight: 700;
 }
 
+.host-cart {
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    right: 0;
+    padding-right: 26px;
+    transform: translateY(-50%);
+    width: fit-content;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.host-cart .fa.fa-cart-plus {
+    padding-right: 5px;
+    font-size: 22px;
+}
+
+.outlet-top-bar {
+    width: -webkit-fill-available;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
 .hero-subtitle {
     color: white;
     width: 100%;
@@ -57,13 +84,13 @@ body {
     padding: 10px;
     padding-top: 15px;
     border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .filter {
-    width: 788px;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
     color: grey;
+    width: fit-content;
+    text-align: left;
     font-size: 12px;
 }
 .search-bar {
