@@ -306,3 +306,7 @@ body {
     left: 599px;
     position: absolute;
 }
+.logo {
+    margin-left: 37%;
+    margin-bottom: 15px;
+}
