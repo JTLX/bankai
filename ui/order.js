@@ -82,6 +82,8 @@ function updateTimer() {
     var hours = Math.floor((msLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((msLeft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((msLeft % (1000 * 60)) / 1000);
+    if(seconds < 10) seconds = "0" + seconds;
+    if(minutes < 10) minutes = "0" + minutes;
     var displayString = hours  + " : " + minutes + " : " + seconds;
     $("#timer").html(displayString);
     msLeft -= 1000;
