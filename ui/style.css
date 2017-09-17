@@ -54,7 +54,16 @@ body {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 10px;
+    padding-top: 15px;
     border-radius: 10px;
+}
+.filter {
+    width: 788px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    color: grey;
+    font-size: 12px;
 }
 .search-bar {
     position: relative;
@@ -81,7 +90,7 @@ body {
     background-color: #f7f7f7;
     border: 1px solid #dcdcdc;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 11px;
     margin-bottom: 20px;
     border-radius: 10px;
     position: relative;
@@ -254,7 +263,7 @@ body {
 .discount-progress-1 {
     height: 7px;
     border-radius: 7px;
-    width: 250px;
+    width: 281px;
     top: 124px;
     left: 213px;
     position: absolute;
@@ -264,7 +273,7 @@ body {
 .discount-progress-2 {
     height: 7px;
     border-radius: 7px;
-    width: 125px;
+    width: 214px;
     top: 124px;
     left: 213px;
     position: absolute;
@@ -273,7 +282,7 @@ body {
 .discount-progress-3 {
     height: 7px;
     border-radius: 7px;
-    width: 300px;
+    width: 342px;
     top: 124px;
     left: 213px;
     position: absolute;
