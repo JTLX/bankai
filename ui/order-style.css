@@ -350,3 +350,23 @@ span.host {
     width: fit-content;
     margin: 0 auto;
 }
+
+.group-chat-button {
+    background: #ff6161;
+    background-image: -webkit-linear-gradient(top, #ff6161, #f06868);
+    background-image: -moz-linear-gradient(top, #ff6161, #f06868);
+    background-image: -ms-linear-gradient(top, #ff6161, #f06868);
+    background-image: -o-linear-gradient(top, #ff6161, #f06868);
+    background-image: linear-gradient(to bottom, #ff6161, #f06868);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+    margin: 20px auto;
+}
