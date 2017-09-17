@@ -2,6 +2,10 @@ body {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
+span.host {
+    color: #aaa;
+    font-size: 13px;
+}
 .header {
     font-family: 'Droid Serif', serif;
     height: 65px;
@@ -339,4 +343,9 @@ body {
     position: relative;
     top: -13px;
     left: 9px;
+}
+.logo {
+    width: 135px;
+    height: 40px;
+    margin: 11px 11px;
 }
