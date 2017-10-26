@@ -1,4 +1,3 @@
-# OneCart
 ![OneCart Logo](https://i.imgur.com/DKgmBVn.png)
 
 The New & Smarter Way to Order
